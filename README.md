@@ -14,7 +14,6 @@ Commonjs modules not resolved in the rollup bundle ouput. This is because the de
 
 Run `bazel build //src/commonjs:bundle` to see the incorrect bundle output.
 
-*the output:*
 <details><summary><code>commonjs bundle output</code></summary>
 
 ```javascript
