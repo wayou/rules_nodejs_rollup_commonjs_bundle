@@ -16,6 +16,7 @@ Run `bazel build //src/commonjs:bundle` to see the incorrect bundle output.
 
 *the output:*
 <details><summary><code>commonjs bundle output</code></summary>
+```javascript
 (function () {
     'use strict';
     var _ = require("lodash");
@@ -23,6 +24,7 @@ Run `bazel build //src/commonjs:bundle` to see the incorrect bundle output.
     module.exports = _.sample(names);
 }());
 //# sourceMappingURL=bundle.es6.js.map
+```
 </details>
 
 #### es6 module bundle
@@ -30,6 +32,7 @@ Run `bazel build //src/commonjs:bundle` to see the incorrect bundle output.
 Run `bazel build //src/es6:bundle` to see the correct bundle output.
 
 <details><summary><code>commonjs bundle output</code></summary>
+```javascript
 var bundle = (function () {
     'use strict';
     /**
@@ -15633,4 +15636,5 @@ var bundle = (function () {
     return index;
 }());
 //# sourceMappingURL=bundle.es6.js.map
+```
 </details>
