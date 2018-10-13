@@ -1,0 +1,14 @@
+package(default_visibility = ["//visibility:public"])
+
+load("@build_bazel_rules_nodejs//:defs.bzl", "rollup_bundle")
+rollup_bundle(
+    name = "bundle",
+    srcs = [
+        "index.js",
+        "lib.js",
+    ],
+    entry_point = "rules_nodejs_rollup_commonjs_bundle/src/commonjs/index.js",
+    deps = [
+        "@npm//lodash",
+    ],
+)
