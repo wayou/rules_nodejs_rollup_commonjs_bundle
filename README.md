@@ -16,6 +16,7 @@ Run `bazel build //src/commonjs:bundle` to see the incorrect bundle output.
 
 *the output:*
 <details><summary><code>commonjs bundle output</code></summary>
+
 ```javascript
 (function () {
     'use strict';
@@ -25,6 +26,7 @@ Run `bazel build //src/commonjs:bundle` to see the incorrect bundle output.
 }());
 //# sourceMappingURL=bundle.es6.js.map
 ```
+
 </details>
 
 #### es6 module bundle
@@ -32,6 +34,7 @@ Run `bazel build //src/commonjs:bundle` to see the incorrect bundle output.
 Run `bazel build //src/es6:bundle` to see the correct bundle output.
 
 <details><summary><code>commonjs bundle output</code></summary>
+
 ```javascript
 var bundle = (function () {
     'use strict';
@@ -15637,4 +15640,5 @@ var bundle = (function () {
 }());
 //# sourceMappingURL=bundle.es6.js.map
 ```
+
 </details>
