@@ -1,14 +1,9 @@
 workspace(name = "rules_nodejs_rollup_commonjs_bundle")
 
-# git_repository(
-#     name = "build_bazel_rules_nodejs",
-#     remote = "https://github.com/bazelbuild/rules_nodejs.git",
-#     tag = "0.15.0",
-# )
-
-local_repository(
+git_repository(
     name = "build_bazel_rules_nodejs",
-    path = "../wayou_rules_nodejs",
+    remote = "https://github.com/bazelbuild/rules_nodejs.git",
+    tag = "0.15.0",
 )
 
 load("@build_bazel_rules_nodejs//:package.bzl", "rules_nodejs_dependencies")
