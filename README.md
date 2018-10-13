@@ -33,7 +33,7 @@ Run `bazel build //src/commonjs:bundle` to see the incorrect bundle output.
 
 Run `bazel build //src/es6:bundle` to see the correct bundle output.
 
-<details><summary><code>commonjs bundle output</code></summary>
+<details><summary><code>es6 bundle output</code></summary>
 
 ```javascript
 var bundle = (function () {
